@@ -26,3 +26,5 @@ NewName/
 		NewName.srt
 
 This utility deletes few temporary files like .JPG, .TXT and aslo removes the sample files (finding files based on size of file, assuming the biggest is always tehr eal movie and small ones are samples sort off)
+
+Use with Caution as this delets the files which the program thinks to be junk.
