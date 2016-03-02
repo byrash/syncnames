@@ -1,6 +1,6 @@
 from os import listdir,rename,remove
 from os.path import isdir,isfile,join,splitext,getsize
-from click import echo,secho
+from click import echo
 import click
 
 @click.command()
@@ -22,7 +22,7 @@ def sync(f,nm):
 				try:
 					rename(file,newName)
 				except FileExistsError:
-					secho('File %s reported to be existing. So removing %s' % (newName,file),blink=True, bold=True, fg='red', bg='white')
+					echo('File %s reported to be existing. So removing %s' % (newName,file))
 					remove(file)
 		echo('Renaming folder %s to %s' %(f,nm))
 		rename(f,nm)
